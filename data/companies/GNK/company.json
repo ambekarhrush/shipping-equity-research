@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "ticker": "GNK",
+  "name": "Genco Shipping & Trading",
+  "segment": "dry_bulk",
+  "currency": "USD",
+  "valuation_date": "2026-10-12",
+  "information_cutoff": "2026-10-12",
+  "statement_date": "2026-06-30",
+  "price_date": "2026-10-12",
+  "price": 26.67,
+  "quote_source": "GNK_PRICE",
+  "forecast_end_year": 2056,
+  "default_case": "base",
+  "evidence_status": "Conditional valuation: aggregate broker fleet mark is allocated by carrying value; post-quarter cash is estimated",
+  "fleet_value_label": "Broker-anchored fleet value",
+  "history_label": "H1 2026",
+  "class_order": [
+    "Newcastlemax",
+    "Capesize",
+    "Ultramax",
+    "Supramax"
+  ],
+  "reported_operating_dwt": 5117000,
+  "limitations": [
+    "The $1.42bn June fleet value is inferred from management\u2019s rounded 18% net LTV disclosure; per-vessel values are allocated by carrying value, not individual broker marks.",
+    "Genco Volunteer is added at its disclosed purchase price less the disclosed delivery-delay adjustment, rather than a new October broker appraisal.",
+    "The July\u2013October operating cash bridge is estimated; the $50m July revolver draw and $0.80 August dividend are explicit.",
+    "Open-fleet scenarios do not reconstruct every vessel charter or derivative position.",
+    "The debt facility is modeled as a 2031 bullet; this is a liquidity schedule, not a covenant or refinancing forecast.",
+    "Drydock cash is normalized from management budgets rather than a vessel-by-vessel survey calendar.",
+    "No replacement fleet is assumed after existing vessels retire; scrap proceeds use a DWT proxy."
+  ],
+  "audit_notes": [
+    "August 12 company release says 43 vessels and 4.935m DWT, while the company fleet list and Q2 pro-forma counts imply 44 vessels and about 5.117m DWT after Genco Volunteer. The model uses the named 44-vessel register and flags the conflict.",
+    "Aggregate broker value is reverse-engineered as (330.0m debt - 73.587m cash) / 18%, then allocated to the 43 June vessels in proportion to disclosed carrying value."
+  ]
+}

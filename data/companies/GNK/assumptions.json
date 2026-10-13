@@ -1,0 +1,272 @@
+[
+  {
+    "key": "tce_Newcastlemax",
+    "label": "Newcastlemax open TCE",
+    "unit": "USD/day",
+    "bear": 18000,
+    "base": 26000,
+    "bull": 34000,
+    "status": "assumption",
+    "rationale": "Illustrative class-rate range. No licensed class curve or calibrated freight forecast."
+  },
+  {
+    "key": "tce_Capesize",
+    "label": "Capesize open TCE",
+    "unit": "USD/day",
+    "bear": 16000,
+    "base": 24000,
+    "bull": 32000,
+    "status": "assumption",
+    "rationale": "Illustrative class-rate range. No licensed class curve or calibrated freight forecast."
+  },
+  {
+    "key": "tce_Ultramax",
+    "label": "Ultramax open TCE",
+    "unit": "USD/day",
+    "bear": 11500,
+    "base": 16500,
+    "bull": 21000,
+    "status": "assumption",
+    "rationale": "Illustrative class-rate range. No licensed class curve or calibrated freight forecast."
+  },
+  {
+    "key": "tce_Supramax",
+    "label": "Supramax open TCE",
+    "unit": "USD/day",
+    "bear": 10500,
+    "base": 14500,
+    "bull": 19000,
+    "status": "assumption",
+    "rationale": "Illustrative class-rate range. No licensed class curve or calibrated freight forecast."
+  },
+  {
+    "key": "wacc",
+    "label": "Discount rate",
+    "unit": "fraction",
+    "bear": 0.12,
+    "base": 0.1,
+    "bull": 0.085,
+    "status": "assumption",
+    "rationale": "Nominal unlevered discount-rate scenarios; not a fitted WACC."
+  },
+  {
+    "key": "asset_factor",
+    "label": "Appraisal multiplier",
+    "unit": "multiple",
+    "bear": 0.85,
+    "base": 1,
+    "bull": 1.12,
+    "status": "assumption",
+    "rationale": "Scenario multiplier on the broker-anchored aggregate fleet value; per-vessel allocations are mechanical."
+  },
+  {
+    "key": "retirement_age",
+    "label": "Retirement age",
+    "unit": "years",
+    "bear": 23,
+    "base": 25,
+    "bull": 27,
+    "status": "assumption",
+    "rationale": "Retire July 1 of build year plus age; build month is unavailable."
+  },
+  {
+    "key": "offhire",
+    "label": "Unavailable share of owned days",
+    "unit": "fraction",
+    "bear": 0.05,
+    "base": 0.035,
+    "bull": 0.025,
+    "status": "assumption",
+    "rationale": "H1 owned-fleet availability implies about 3.9% off-hire; scenarios bracket that outcome."
+  },
+  {
+    "key": "opex",
+    "label": "Vessel operating cost",
+    "unit": "USD/day",
+    "bear": 7300,
+    "base": 6800,
+    "bull": 6400,
+    "status": "assumption",
+    "rationale": "H1 disclosed DVOE was $6,781/day; Q3 budget was $6,750/day."
+  },
+  {
+    "key": "management",
+    "label": "Management cost",
+    "unit": "USD/day",
+    "bear": 300,
+    "base": 235,
+    "bull": 200,
+    "status": "assumption",
+    "rationale": "H1 technical management expense divided by ownership days was about $235/day."
+  },
+  {
+    "key": "ga",
+    "label": "Corporate overhead",
+    "unit": "USD/year",
+    "bear": 28000000,
+    "base": 24000000,
+    "bull": 22000000,
+    "status": "assumption",
+    "rationale": "Annualized H1 cash G&A excluding stock compensation is about $23.9m."
+  },
+  {
+    "key": "dock_budget",
+    "label": "Drydock cash budget",
+    "unit": "USD/vessel/year",
+    "bear": 750000,
+    "base": 600000,
+    "bull": 500000,
+    "status": "assumption",
+    "rationale": "Management budgeted $25.6m for 2027, about $582k per current vessel."
+  },
+  {
+    "key": "maintenance",
+    "label": "Other maintenance capex",
+    "unit": "USD/vessel/year",
+    "bear": 150000,
+    "base": 100000,
+    "bull": 75000,
+    "status": "assumption",
+    "rationale": "Other recurring fleet capex outside drydock budget; explicit scenario assumption."
+  },
+  {
+    "key": "scrap_per_dwt",
+    "label": "Net scrap proxy",
+    "unit": "USD/dwt",
+    "bear": 55,
+    "base": 70,
+    "bull": 85,
+    "status": "assumption",
+    "rationale": "Explicit DWT-based proxy, not lightweight tonnage times steel price; sensitivity only."
+  },
+  {
+    "key": "inflation",
+    "label": "Annual cost and rate growth",
+    "unit": "fraction",
+    "bear": 0.02,
+    "base": 0.02,
+    "bull": 0.02,
+    "status": "assumption",
+    "rationale": "Same nominal escalation on TCE, opex and recurring cash budgets; no perpetual terminal value."
+  },
+  {
+    "key": "tax_on_revenue",
+    "label": "Cash taxes / TCE revenue",
+    "unit": "fraction",
+    "bear": 0.01,
+    "base": 0.005,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Simplified cash-tax proxy; no jurisdictional tax model or interest tax shield."
+  },
+  {
+    "key": "interest",
+    "label": "Debt interest rate",
+    "unit": "fraction",
+    "bear": 0.07,
+    "base": 0.0575,
+    "bull": 0.05,
+    "status": "assumption",
+    "rationale": "Scenario around SOFR plus 1.80%; not a forward interest-rate curve."
+  },
+  {
+    "key": "bridge_cash",
+    "label": "Unreported net cash change",
+    "unit": "USD",
+    "bear": -45000000,
+    "base": -25000000,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Estimated July 1\u2013Oct 12 net operating cash less the Volunteer purchase balance; the $50m draw and August dividend are modeled separately."
+  },
+  {
+    "key": "remaining_capex_factor",
+    "label": "Remaining newbuild payment multiplier",
+    "unit": "multiple",
+    "bear": 1.2,
+    "base": 1,
+    "bull": 0.8,
+    "status": "assumption",
+    "rationale": "Base allocation of June remaining commitments evenly across five hulls; three future hulls remain."
+  },
+  {
+    "key": "extra_claims",
+    "label": "Other net claims",
+    "unit": "USD",
+    "bear": 10000000,
+    "base": 5693000,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Base subtracts June operating lease liabilities; other claims remain unmodeled."
+  },
+  {
+    "key": "ga_floor",
+    "label": "Overhead retained until last retirement",
+    "unit": "fraction",
+    "bear": 0.5,
+    "base": 0.25,
+    "bull": 0.1,
+    "status": "assumption",
+    "rationale": "Fraction of overhead remains fixed while any fleet operates; rest declines with owned days."
+  },
+  {
+    "key": "additional_shares",
+    "label": "Additional share dilution",
+    "unit": "shares",
+    "bear": 1000000,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Separate from completed September issuance; not weighted-average EPS shares."
+  },
+  {
+    "key": "atm_draw",
+    "label": "Hypothetical additional ATM gross proceeds",
+    "unit": "USD",
+    "bear": 0,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Default undrawn. Both disclosed programs total $116.37111m; issuance adds cash net fees and shares at market price."
+  },
+  {
+    "key": "atm_fee",
+    "label": "ATM fee assumption",
+    "unit": "fraction",
+    "bear": 0.02,
+    "base": 0.02,
+    "bull": 0.02,
+    "status": "assumption",
+    "rationale": "Illustrative all-in issuance cost, not an observed completed transaction."
+  },
+  {
+    "key": "fixed_share",
+    "label": "Fixed-charter share",
+    "unit": "fraction",
+    "bear": 0.15,
+    "base": 0.1,
+    "bull": 0.05,
+    "status": "assumption",
+    "rationale": "Approximate fixed-rate coverage; no full vessel charter book reconstruction."
+  },
+  {
+    "key": "fixed_tce",
+    "label": "Fixed-charter TCE",
+    "unit": "USD/day",
+    "bear": 21000,
+    "base": 24000,
+    "bull": 27000,
+    "status": "assumption",
+    "rationale": "Illustrative fleet-wide fixed TCE applied to the covered share."
+  },
+  {
+    "key": "working_capital",
+    "label": "Operating working capital / annual TCE",
+    "unit": "fraction",
+    "bear": 0.09,
+    "base": 0.07,
+    "bull": 0.05,
+    "status": "assumption",
+    "rationale": "Modeled share of annualized TCE revenue; base broadly matches June operating working capital."
+  }
+]

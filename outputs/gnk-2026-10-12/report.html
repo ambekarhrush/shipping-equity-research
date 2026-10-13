@@ -1,0 +1,82 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Genco Shipping &amp; Trading | Shipping equity research</title>
+<style>
+:root{--ink:#142c46;--muted:#54677a;--line:#dce4eb;--paper:#f3f6f8;--blue:#214e76}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);font:16px/1.6 system-ui,-apple-system,sans-serif;color:var(--ink)}
+header{background:var(--ink);color:white;padding:48px max(6vw,24px) 42px}header .eyebrow{color:#b9cddd;letter-spacing:.12em;font-size:12px;text-transform:uppercase}h1{font-size:clamp(32px,5vw,52px);line-height:1.12;margin:16px 0}header p{max-width:800px;color:#d2dde6}
+nav{padding:14px max(6vw,24px);background:white;border-bottom:1px solid var(--line);display:flex;gap:26px;flex-wrap:wrap}a{color:var(--blue);text-underline-offset:3px}nav a{text-decoration:none;font-size:14px}
+main{max-width:1140px;margin:32px auto;padding:0 24px}section{background:white;border:1px solid var(--line);border-radius:10px;padding:30px;margin:24px 0;scroll-margin-top:16px}h2{font-size:25px;margin:0 0 14px;line-height:1.25}h3{font-size:17px;margin:24px 0 8px}p{max-width:920px}.muted{color:var(--muted);font-size:14px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:white;border:1px solid var(--line);border-radius:10px;padding:24px}.card strong{display:block;font-size:34px;margin:8px 0}.card span{font-size:14px;color:var(--muted)}
+.notice{border-left:4px solid #ac7539;padding:12px 18px;background:#faf5ed;font-size:14px}img{display:block;width:100%;height:auto;margin:18px 0}table{border-collapse:collapse;width:100%;font-size:14px;margin:20px 0}td,th{text-align:right;padding:12px 10px;border-bottom:1px solid var(--line)}th:first-child{text-align:left}thead{background:#edf2f6}.table-wrap{overflow-x:auto}li{margin:9px 0}code{background:#edf2f6;padding:3px 6px;border-radius:4px;font-size:13px}footer{padding:15px 0 40px;color:var(--muted);font-size:13px}@media(max-width:680px){.cards{grid-template-columns:1fr}section{padding:20px}header{padding-top:32px}}
+</style></head><body>
+<header><div class="eyebrow">Shipping equity research · GNK</div>
+<h1>Genco Shipping &amp; Trading</h1><p>What is the fleet worth, what cash can it generate, and what freight rates justify the share price?</p>
+<div class="muted" style="color:#c0d1df">Snapshot 2026-10-12 · USD · Base case selected · Public inputs and explicit scenarios</div></header>
+<nav aria-label="Report sections"><a href="#view">Research view</a><a href="#cases">Valuation</a><a href="#cash">Cash flow</a><a href="#rates">Implied rates</a><a href="#evidence">Evidence</a></nav>
+<main><div class="cards"><div class="card">Market close<strong>$26.67</strong><span>Dated share price</span></div>
+<div class="card">Asset NAV<strong>$27.15</strong><span>Broker-anchored fleet value · excludes overhead PV</span></div>
+<div class="card">Remaining-life DCF<strong>$19.23</strong><span>Per share · includes operating overhead</span></div></div>
+<section id="view"><h2>Read the two valuation lenses together</h2><p>The base scenario places the share price below estimated fleet asset NAV and above the value supported by modeled remaining-life cash flows. This is a conditional research result. The gap does not establish mispricing: asset marks, the cash bridge, future rates and fleet renewal can change the conclusion.</p>
+<div class="notice">Conditional valuation: aggregate broker fleet mark is allocated by carrying value; post-quarter cash is estimated. Historical forecast validation is not included in this release.</div>
+<h3>Start here</h3><p>Open <a href="GNK-valuation.xlsx">the Excel model</a>, read <strong>Summary</strong>, then use <strong>Assumptions D5</strong> to switch cases. Blue text on pale yellow cells marks editable assumptions. NAV, Cash Flow and Debt explain the result; Sources and Checks let you audit it.</p>
+<p class="muted">This HTML report is a saved Python run. Excel edits recalculate Excel only. Change the reviewed input files and rerun the command to refresh this report and the notebook.</p></section>
+<section id="cases"><h2>Three explicit scenarios</h2><p>Each case changes freight rates, vessel marks, costs, off-hire, retirement age, financing and discount assumptions together. These are scenario values, not probabilities or price targets.</p><img src="valuation.png" alt="Scenario chart comparing asset NAV, remaining-life DCF and market price">
+<div class="table-wrap"><table><thead><tr><th>Case</th><th>NAV / share</th><th>DCF / share</th><th>Price / NAV</th><th>Next-year UFCF</th></tr></thead><tbody><tr><th>Bear</th><td>$20.99</td><td>$-2.16</td><td>1.27×</td><td>$30.4m</td></tr><tr><th>Base</th><td>$27.15</td><td>$19.23</td><td>0.98×</td><td>$142.7m</td></tr><tr><th>Bull</th><td>$31.95</td><td>$47.88</td><td>0.83×</td><td>$253.1m</td></tr></tbody></table></div>
+<h3>DCF sensitivity</h3><p class="muted">Rows vary the total discount rate; columns multiply all open class rates. Other base assumptions stay fixed. Values are USD per share.</p><div class="table-wrap"><table class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>0.8× rates</th>
+      <th>0.9× rates</th>
+      <th>1.0× rates</th>
+      <th>1.1× rates</th>
+      <th>1.2× rates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>8%</th>
+      <td>$12.23</td>
+      <td>$17.40</td>
+      <td>$22.57</td>
+      <td>$27.73</td>
+      <td>$32.90</td>
+    </tr>
+    <tr>
+      <th>9%</th>
+      <td>$11.05</td>
+      <td>$15.93</td>
+      <td>$20.82</td>
+      <td>$25.70</td>
+      <td>$30.59</td>
+    </tr>
+    <tr>
+      <th>10%</th>
+      <td>$9.97</td>
+      <td>$14.60</td>
+      <td>$19.23</td>
+      <td>$23.85</td>
+      <td>$28.48</td>
+    </tr>
+    <tr>
+      <th>11%</th>
+      <td>$9.00</td>
+      <td>$13.39</td>
+      <td>$17.78</td>
+      <td>$22.17</td>
+      <td>$26.56</td>
+    </tr>
+    <tr>
+      <th>12%</th>
+      <td>$8.11</td>
+      <td>$12.28</td>
+      <td>$16.46</td>
+      <td>$20.64</td>
+      <td>$24.81</td>
+    </tr>
+  </tbody>
+</table></div></section>
+<section id="cash"><h2>Cash flows end when the fleet retires</h2><p>The forecast starts the day after valuation, models twelve quarters, then runs annually through retirement. Delivery payments, maintenance, drydocking, working capital and scrap proceeds are explicit. No perpetual terminal value or unfunded replacement fleet is assumed.</p><img src="cash-and-fleet.png" alt="Quarterly free cash flow and finite fleet runoff">
+<p>Base next-year unlevered free cash flow is <strong>$142.7m</strong>. Cash after assumed debt repayments and interest is <strong>$120.9m</strong>, before dividends. It is not a dividend forecast.</p></section>
+<section id="rates"><h2>What does the market price require?</h2><p>Under the fixed base assumptions, the reverse valuation requires <strong>16.1% higher open charter rates</strong> relative to the base vector. The Python solution is repriced through the full model, including the extra working capital associated with higher revenues.</p><div class="table-wrap"><table><thead><tr><th>Vessel class</th><th>Base open TCE</th></tr></thead><tbody><tr><th>Newcastlemax</th><td>$26,000/day</td></tr><tr><th>Capesize</th><td>$24,000/day</td></tr><tr><th>Ultramax</th><td>$16,500/day</td></tr><tr><th>Supramax</th><td>$14,500/day</td></tr></tbody></table></div><p class="muted">TCE means time-charter-equivalent earnings after voyage costs. These USD/day inputs are scenarios, not Baltic index points or a licensed forward curve.</p></section>
+<section id="evidence"><h2>Evidence and remaining research</h2><ul><li>The $1.42bn June fleet value is inferred from management’s rounded 18% net LTV disclosure; per-vessel values are allocated by carrying value, not individual broker marks.</li><li>Genco Volunteer is added at its disclosed purchase price less the disclosed delivery-delay adjustment, rather than a new October broker appraisal.</li><li>The July–October operating cash bridge is estimated; the $50m July revolver draw and $0.80 August dividend are explicit.</li><li>Open-fleet scenarios do not reconstruct every vessel charter or derivative position.</li><li>The debt facility is modeled as a 2031 bullet; this is a liquidity schedule, not a covenant or refinancing forecast.</li><li>Drydock cash is normalized from management budgets rather than a vessel-by-vessel survey calendar.</li><li>No replacement fleet is assumed after existing vessels retire; scrap proceeds use a DWT proxy.</li></ul><h3>Source documents</h3><ul><li><a href='https://www.sec.gov/Archives/edgar/data/1326200/000110465926091231/gnk-20260630x10q.htm'>Genco Q2 2026 Form 10-Q</a> <span class='muted'>Published 2026-08-05</span></li><li><a href='https://investors.gencoshipping.com/news/press-releases/news-details/2026/Genco-Shipping--Trading-Limited-Announces-Q2-2026-Financial-Results/default.aspx'>Genco Q2 2026 earnings release</a> <span class='muted'>Published 2026-08-05</span></li><li><a href='https://investors.gencoshipping.com/news/press-releases/news-details/2026/Genco-Shipping--Trading-Limited-Announces-Delivery-of-High-Specification-Capesize-Vessel/default.aspx'>Genco Volunteer delivery announcement</a> <span class='muted'>Published 2026-08-12</span></li><li><a href='https://www.gencoshipping.com/fleet/'>Genco current fleet register</a> <span class='muted'>Published 2026-08-12</span></li><li><a href='https://chartexchange.com/symbol/nyse-gnk/historical/'>GNK historical close</a> <span class='muted'>Published 2026-10-12</span></li></ul><h3>Reproduce and inspect</h3><p><code>uv run shipping-equity run GNK</code></p><p>Inspect <a href="results.json">machine-readable results</a>, <a href="scenarios.csv">scenario values</a>, <a href="base-cash-flow.csv">the base cash schedule</a> and <a href="reconciliation.json">Excel–Python reconciliation</a>.</p></section>
+<footer>Input fingerprint: <code>f06f117695c938ef</code> · Research snapshot; no live prices or automatic filing updates.</footer></main></body></html>

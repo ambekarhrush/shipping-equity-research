@@ -7,13 +7,16 @@ future earnings. This project makes that comparison inspectable: start with indi
 ships, follow their remaining cash flows, then solve the freight-rate assumption embedded
 in the share price.
 
-The first research case is **Star Bulk (SBLK), as of 9 October 2026**. The base scenario
-produces **$32.99/share asset NAV** and **$26.55/share DCF**, against a **$29.70 close**.
-These are conditional estimates, not a blended target or recommendation. The cash bridge,
-remaining delivery payments and charter exposure need further review.
+The research now covers **Star Bulk (SBLK)** and **Genco Shipping & Trading (GNK)**. GNK's
+12 October 2026 base scenario produces **$27.15/share asset NAV** and **$19.23/share DCF**,
+against a **$26.67 close**. SBLK's 9 October snapshot remains **$32.99 NAV** and **$26.55
+DCF** against **$29.70**. These are conditional estimates, not price targets or recommendations.
 
 [Open the Excel model](outputs/sblk-2026-10-09/SBLK-valuation.xlsx) ·
 [Read the executed notebook](notebooks/SBLK-research.ipynb) ·
+[Open the GNK model](outputs/gnk-2026-10-12/GNK-valuation.xlsx) ·
+[Read the GNK notebook](notebooks/GNK-research.ipynb) ·
+[Peer comparison](docs/PEER_COMPARISON.md) ·
 [Research note](docs/RESEARCH_NOTE.md) ·
 [Five-minute guide](docs/QUICK_START.md)
 
@@ -29,9 +32,9 @@ remaining delivery payments and charter exposure need further review.
 | What changes the conclusion? | Three coherent scenarios, freight/discount sensitivities and targeted notebook stresses. |
 | Can the calculations be checked? | Independent Excel and Python implementations, source reconciliations and synthetic arithmetic tests. |
 
-The reviewed register includes **135 operating vessels and three committed newbuilds**.
-Excel and Python agree on **3,657 compared values** across all three scenarios, with a
-maximum absolute difference below **$0.000002** in the cash schedules.
+The SBLK register includes **135 operating vessels and three committed newbuilds**; GNK has
+a separate **44-vessel** package. Each workbook agrees with Python on **3,657 compared
+values** across all scenarios. GNK's maximum absolute difference is below **$0.000001**.
 [Calculation evidence](outputs/sblk-2026-10-09/reconciliation.json) and
 [verification details](docs/VERIFICATION.md) define the checks and their limits.
 
@@ -44,8 +47,11 @@ uv sync --frozen --extra dev
 uv run shipping-equity list
 uv run shipping-equity validate SBLK
 uv run shipping-equity run SBLK
+uv run shipping-equity validate GNK
+uv run shipping-equity run GNK
 uv run shipping-equity reconcile SBLK --evidence outputs/sblk-2026-10-09/excel-calculation-evidence.json
-uv run python scripts/build_notebook.py
+uv run shipping-equity reconcile GNK --evidence outputs/gnk-2026-10-12/excel-calculation-evidence.json
+uv run python scripts/build_company_notebook.py GNK
 uv run pytest -q
 ```
 
@@ -64,17 +70,16 @@ Each company has its own six-file package under `data/companies/`. No ticker-spe
 valuation equations are embedded in the Python engine.
 
 ```bash
-uv run shipping-equity init-company GNK --name "Genco Shipping & Trading" --date 2026-10-09
-# Fill the blank templates with reviewed, dated GNK inputs before running:
-uv run shipping-equity validate GNK
-uv run shipping-equity run GNK
+uv run shipping-equity init-company SB --name "Safe Bulkers" --date 2026-10-12
+# Fill the blank templates with reviewed, dated SB inputs before running:
+uv run shipping-equity validate SB
+uv run shipping-equity run SB
 ```
 
 The scaffold intentionally contains missing values. It never fills a new company with
-Star Bulk's facts. Follow [Adding companies](docs/ADDING_COMPANIES.md) for field definitions,
+another company's facts. Follow [Adding companies](docs/ADDING_COMPANIES.md) for field definitions,
 source requirements and validation. The current economics support **dry bulk**; other
-shipping segments need a reviewed extension. GNK and SB are future research cases, not
-completed peer valuations.
+shipping segments need a reviewed extension. Safe Bulkers remains a future research case.
 
 ## How it is organized
 
@@ -99,6 +104,6 @@ runtime; it is a separate dependency from the portable Python workflow.
 
 This is a public-input snapshot with manually reviewed data, not an automated market-data
 feed. Freight rates are explicit scenarios. There is no licensed FFA curve, reconstructed
-charter book, full survey calendar, fleet-renewal financing model, completed peer comparison
-or historical forecast validation. A passing arithmetic check does not validate an
+charter book, full survey calendar, fleet-renewal financing model or historical forecast
+validation. The peer comparison is not yet normalized to a common reporting date. A passing arithmetic check does not validate an
 investment thesis. See [release status](docs/BUILD_STATUS.md) for completed and deferred work.

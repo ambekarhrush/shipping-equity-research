@@ -1,0 +1,37 @@
+[
+  {
+    "id": "GNK_Q2_10Q",
+    "title": "Genco Q2 2026 Form 10-Q",
+    "published": "2026-08-05",
+    "url": "https://www.sec.gov/Archives/edgar/data/1326200/000110465926091231/gnk-20260630x10q.htm",
+    "notes": "Primary financial statements, fleet carrying values, vessel schedule, debt and subsequent events; USD thousands converted once to USD."
+  },
+  {
+    "id": "GNK_Q2_RELEASE",
+    "title": "Genco Q2 2026 earnings release",
+    "published": "2026-08-05",
+    "url": "https://investors.gencoshipping.com/news/press-releases/news-details/2026/Genco-Shipping--Trading-Limited-Announces-Q2-2026-Financial-Results/default.aspx",
+    "notes": "Reports 18% net LTV using two independent broker valuations as of July 15 and the $50m July debt draw."
+  },
+  {
+    "id": "GNK_VOLUNTEER",
+    "title": "Genco Volunteer delivery announcement",
+    "published": "2026-08-12",
+    "url": "https://investors.gencoshipping.com/news/press-releases/news-details/2026/Genco-Shipping--Trading-Limited-Announces-Delivery-of-High-Specification-Capesize-Vessel/default.aspx",
+    "notes": "Confirms delivery, build year, DWT and scrubber. Release fleet count conflicts with named fleet register."
+  },
+  {
+    "id": "GNK_FLEET",
+    "title": "Genco current fleet register",
+    "published": "2026-08-12",
+    "url": "https://www.gencoshipping.com/fleet/",
+    "notes": "Named fleet, vessel classes, DWT and build years; publication date set to latest evidenced fleet update."
+  },
+  {
+    "id": "GNK_PRICE",
+    "title": "GNK historical close",
+    "published": "2026-10-12",
+    "url": "https://chartexchange.com/symbol/nyse-gnk/historical/",
+    "notes": "October 12 close USD26.67; secondary market-data source, no archive redistributed."
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "ticker": "GNK",
+  "valuation_date": "2026-10-12",
+  "input_sha256": "f06f117695c938ef661b14fb99bc958b9191c315077db08370e0173376704563",
+  "status": "Conditional valuation: aggregate broker fleet mark is allocated by carrying value; post-quarter cash is estimated",
+  "cases": {
+    "bear": {
+      "price": 26.67,
+      "nav_per_share": 20.98847586511689,
+      "price_nav": 1.27069731844254,
+      "enterprise_value": 249818892.84985396,
+      "equity_dcf": -96463391.15014601,
+      "dcf_per_share": -2.163506083276491,
+      "next_year_revenue": 225446818.07449105,
+      "next_year_ufcf": 30413577.632974163,
+      "next_year_equity_cash": 3813577.6329741552,
+      "minimum_cash_headroom": -279598366.68657553
+    },
+    "base": {
+      "price": 26.67,
+      "nav_per_share": 27.15029957024641,
+      "price_nav": 0.9823096032880329,
+      "enterprise_value": 1159947082.7695303,
+      "equity_dcf": 837971798.7695303,
+      "dcf_per_share": 19.22544320140397,
+      "next_year_revenue": 314917440.0828974,
+      "next_year_ufcf": 142718587.50976053,
+      "next_year_equity_cash": 120868587.50976053,
+      "minimum_cash_headroom": 54995030.60158287
+    },
+    "bull": {
+      "price": 26.67,
+      "nav_per_share": 31.95257770225509,
+      "price_nav": 0.8346744431238089,
+      "enterprise_value": 2378123092.1135955,
+      "equity_dcf": 2086840808.1135955,
+      "dcf_per_share": 47.87803060398018,
+      "next_year_revenue": 408971030.1594692,
+      "next_year_ufcf": 253072276.61603424,
+      "next_year_equity_cash": 234072276.61603424,
+      "minimum_cash_headroom": 106085997.95402211
+    }
+  },
+  "reverse": {
+    "status": "solved",
+    "multiplier": 1.1608882897999138,
+    "residual": 1.2838050622576702e-09,
+    "iterations": 32,
+    "bounds": [
+      0,
+      3
+    ]
+  }
+}

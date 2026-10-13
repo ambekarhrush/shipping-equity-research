@@ -6,6 +6,7 @@ import { Workbook, SpreadsheetFile } from '@oai/artifact-tool';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const input = JSON.parse(await fs.readFile(path.join(root, '.cache/workbook-inputs.json'), 'utf8'));
 const { company, fleet, financials, assumptions, sources, debt } = input;
+const fleetValueLabel = company.fleet_value_label ?? 'Appraisal value';
 const output = path.join(root, `outputs/${company.ticker.toLowerCase()}-${company.valuation_date}`);
 await fs.mkdir(path.join(output, 'previews'), { recursive: true });
 const wb = Workbook.create();
@@ -93,11 +94,11 @@ src.getRange('G:G').format.columnWidth=24;
 const registerRow=financials.length+10;
 section(src,registerRow,'Source register','H');
 sources.forEach((s,i)=>{let r=registerRow+2+i*3;val(src,`C${r}`,s.id);val(src,`D${r}`,s.title);val(src,`C${r+1}`,s.url);src.getRange(`C${r+1}:H${r+1}`).merge();src.getRange(`C${r+1}:H${r+1}`).format.font={size:9,color:muted};});
-val(src,`C${registerRow+sources.length*3+4}`,'Source extracts are dated. Appraisal marks are not current broker quotes.');
+val(src,`C${registerRow+sources.length*3+4}`,`Source extracts are dated. ${fleetValueLabel} inputs are not current executable sale prices.`);
 const source=k=>`'Sources'!$D$${sr[k]}`;
 
 const f=sheets.Fleet;
-header(f,'C6:R6',['Vessel','Class','DWT','Built','Delivery','Appraisal date','Appraisal USD','Remaining capex USD','Scrubber','Source IMO','Source IDs','Delivery basis','Retirement','Scenario value USD','Future capex USD','Notes']);
+header(f,'C6:R6',['Vessel','Class','DWT','Built','Delivery','Value date','Fleet value USD','Remaining capex USD','Scrubber','Source IMO','Source IDs','Delivery basis','Retirement','Scenario value USD','Future capex USD','Notes']);
 f.getRange('C:C').format.columnWidth=25;f.getRange('D:D').format.columnWidth=19;
 f.getRange('M:M').format.columnWidth=35;f.getRange('R:R').format.columnWidth=70;
 f.getRange('J:J').format.columnWidth=23;f.getRange('K:K').format.columnWidth=12;
@@ -134,7 +135,7 @@ const nav=sheets.NAV;
 section(nav,6,'Common-equity NAV (USD millions)');
 const navRows={fleet:8,cash_open:11,equity:12,dividends:13,repayments:14,bridge:15,atm:16,cash:17,debt:20,other:21,capex:22,nwc:23,nav:25,shares:27,navps:28,price:29,pnav:30};
 const navLines=[
- [8,'Fleet at selected appraisal mark',`=SUM('Fleet'!P7:P${lastFleet})`],
+ [8,`Fleet at selected ${fleetValueLabel.toLowerCase()}`,`=SUM('Fleet'!P7:P${lastFleet})`],
  [11,'Reported unrestricted cash',`=${source('cash')}`],
  [12,'Completed equity proceeds',`=${source('equity_proceeds')}`],
  [13,'Disclosed dividend paid',`=-${source('subsequent_dividend')}`],
@@ -153,7 +154,7 @@ const navLines=[
  [30,'Price / asset NAV','=D29/D28']];
 navLines.forEach(([r,label,formula])=>{val(nav,`C${r}`,label);fx(nav,`D${r}`,formula);});
 nav.getRange('D8:D27').setNumberFormat(money);nav.getRange('D28:D29').setNumberFormat(price);nav.getRange('D30').setNumberFormat('0.00x');
-val(nav,'F8','Appraisal multiplier affects vessel values, not cash or debt.');
+val(nav,'F8',`${fleetValueLabel} multiplier affects vessel values, not cash or debt.`);
 val(nav,'F15','Estimated residual includes operations, sales, delivery spending and restricted-cash release.');
 val(nav,'F20','Includes finance leases. Adds back June unamortized issuance costs before repayments.');
 val(nav,'F22','Full vessel value less remaining payments; deposits are not added a second time.');
@@ -284,13 +285,13 @@ sum.getRange('D23:D29').setNumberFormat(money);sum.getRange('D30').setNumberForm
 section(sum,14,'What do remaining cash flows support? (USD millions)','J');section(sum,21,'What cash can the business generate? (USD millions)','J');
 section(sum,27,'What open freight rates justify the share price?','J');
 val(sum,'F10','Edit the blue cells in Assumptions. Keep reported history unchanged.');
-val(sum,'F11','Dated appraisals with the selected asset-value adjustment.');
+val(sum,'F11',`Dated ${fleetValueLabel.toLowerCase()} with the selected asset-value adjustment.`);
 val(sum,'F19','Finite fleet life. No perpetual growth or unfinanced replacement fleet.');
 val(sum,'F25','Debt maturity timing is estimated; excludes future dividends and refinancing.');
 val(sum,'F30','Solves one common class-rate multiplier, with every other input held fixed.');
 val(sum,'F31','Zero confirms the affine repricing identity; Python also solves by bisection.');
 val(sum,'C38','Research view: conditional valuation, not a final stock recommendation.');
-val(sum,'C39','Cash bridge, charter coverage, remaining newbuild payments and appraisal updates require review.');
+val(sum,'C39',`Cash bridge, charter coverage, remaining commitments and ${fleetValueLabel.toLowerCase()} updates require review.`);
 val(sum,'C40','Forecast rates are explicit scenarios. The workbook does not contain a licensed freight curve.');
 sum.getRange('C38:J40').format.font={color:muted,size:10};
 sum.getRange('D6:D35').format.font.color=ink;sum.getRange('D4').format.font.color=green;

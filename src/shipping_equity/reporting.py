@@ -21,6 +21,7 @@ def write_report(company: Company, output: Path) -> dict:
     output.mkdir(parents=True, exist_ok=True)
     cases = {name: value_company(company, name) for name in ["bear", "base", "bull"]}
     base = cases["base"]
+    fleet_value_label = company.metadata.get("fleet_value_label", "Appraisal value")
     root = reverse_valuation(company)
     sensitivity = []
     for adjustment in [-0.02, -0.01, 0, 0.01, 0.02]:
@@ -65,7 +66,7 @@ def write_report(company: Company, output: Path) -> dict:
     fig, ax = plt.subplots(figsize=(10, 4.7), layout="constrained")
     x = np.arange(3)
     for shift, key, label, color in [
-        (-0.19, "nav_per_share", "Asset NAV", "#9ab0c5"),
+        (-0.19, "nav_per_share", f"Asset NAV · {fleet_value_label}", "#9ab0c5"),
         (0.19, "dcf_per_share", "Remaining-life DCF", "#214e76"),
     ]:
         bars = ax.bar(x + shift, summaries[key], width=0.36, label=label, color=color)
@@ -150,10 +151,10 @@ main{{max-width:1140px;margin:32px auto;padding:0 24px}}section{{background:whit
 <div class="muted" style="color:#c0d1df">Snapshot {esc(company.metadata["valuation_date"])} · USD · Base case selected · Public inputs and explicit scenarios</div></header>
 <nav aria-label="Report sections"><a href="#view">Research view</a><a href="#cases">Valuation</a><a href="#cash">Cash flow</a><a href="#rates">Implied rates</a><a href="#evidence">Evidence</a></nav>
 <main><div class="cards"><div class="card">Market close<strong>${base.summary["price"]:.2f}</strong><span>Dated share price</span></div>
-<div class="card">Asset NAV<strong>${base.summary["nav_per_share"]:.2f}</strong><span>Per share · excludes overhead PV</span></div>
+<div class="card">Asset NAV<strong>${base.summary["nav_per_share"]:.2f}</strong><span>{esc(fleet_value_label)} · excludes overhead PV</span></div>
 <div class="card">Remaining-life DCF<strong>${base.summary["dcf_per_share"]:.2f}</strong><span>Per share · includes operating overhead</span></div></div>
 <section id="view"><h2>Read the two valuation lenses together</h2><p>The base scenario places the share price {nav_relation} estimated fleet asset NAV and {dcf_relation} the value supported by modeled remaining-life cash flows. This is a conditional research result. The gap does not establish mispricing: asset marks, the cash bridge, future rates and fleet renewal can change the conclusion.</p>
-<div class="notice">{esc(company.metadata["evidence_status"])}. Peer valuations and historical forecast validation are not included in this release.</div>
+<div class="notice">{esc(company.metadata["evidence_status"])}. Historical forecast validation is not included in this release.</div>
 <h3>Start here</h3><p>Open <a href="{esc(company.metadata["ticker"])}-valuation.xlsx">the Excel model</a>, read <strong>Summary</strong>, then use <strong>Assumptions D5</strong> to switch cases. Blue text on pale yellow cells marks editable assumptions. NAV, Cash Flow and Debt explain the result; Sources and Checks let you audit it.</p>
 <p class="muted">This HTML report is a saved Python run. Excel edits recalculate Excel only. Change the reviewed input files and rerun the command to refresh this report and the notebook.</p></section>
 <section id="cases"><h2>Three explicit scenarios</h2><p>Each case changes freight rates, vessel marks, costs, off-hire, retirement age, financing and discount assumptions together. These are scenario values, not probabilities or price targets.</p><img src="valuation.png" alt="Scenario chart comparing asset NAV, remaining-life DCF and market price">

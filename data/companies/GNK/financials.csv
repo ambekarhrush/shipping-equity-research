@@ -1,0 +1,41 @@
+key,value,unit,period,source_id,source_location,status,notes
+cash,73587000,USD,2026-06-30,GNK_Q2_10Q,Balance sheet,observed,
+restricted_cash,0,USD,2026-06-30,GNK_Q2_10Q,Balance sheet,observed,No restricted cash line reported
+bank_debt_gross,330000000,USD,2026-06-30,GNK_Q2_10Q,Note 9 debt,observed,
+finance_leases,0,USD,2026-06-30,GNK_Q2_10Q,Balance sheet,observed,Operating leases excluded from financial debt
+debt_issuance_costs,10492000,USD,2026-06-30,GNK_Q2_10Q,Note 9 debt,observed,
+shares,43586605,shares,2026-06-30,GNK_Q2_10Q,Balance sheet,observed,
+available_days,7948.9,days,2026-06-30,GNK_Q2_10Q,Fleet data,observed,Owned and chartered-in
+ownership_days,7830.2,days,2026-06-30,GNK_Q2_10Q,Fleet data,observed,
+voyage_revenue,250843000,USD,2026-06-30,GNK_Q2_10Q,Income statement,observed,
+voyage_cost,80361000,USD,2026-06-30,GNK_Q2_10Q,Income statement,observed,
+charter_hire,6481000,USD,2026-06-30,GNK_Q2_10Q,Income statement,observed,
+realized_derivatives,311000,USD,2026-06-30,GNK_Q2_10Q,Segment reconciliation other income,observed,
+tce_revenue,164312000,USD,2026-06-30,GNK_Q2_10Q,Segment reconciliation,observed,
+reported_tce,21836,USD/day,2026-06-30,GNK_Q2_10Q,Fleet data,observed,
+bunker_gain,0,USD,2026-06-30,GNK_Q2_10Q,TCE reconciliation,observed,No separate bunker gain used
+vessel_opex,53096000,USD,2026-06-30,GNK_Q2_10Q,Income statement,observed,
+management_fees,1839000,USD,2026-06-30,GNK_Q2_10Q,Income statement,observed,Technical management
+ga,16012000,USD,2026-06-30,GNK_Q2_10Q,Income statement,observed,
+stock_comp,4075000,USD,2026-06-30,GNK_Q2_10Q,Cash flow statement,observed,
+drydock_expense,13508000,USD,2026-06-30,GNK_Q2_10Q,Cash flow statement,observed,Deferred drydock cash incurred
+cash_from_operations,48938000,USD,2026-06-30,GNK_Q2_10Q,Cash flow statement,observed,
+cash_from_investing,-122207000,USD,2026-06-30,GNK_Q2_10Q,Cash flow statement,observed,
+cash_from_financing,91316000,USD,2026-06-30,GNK_Q2_10Q,Cash flow statement,observed,
+opening_total_cash,55540000,USD,2026-06-30,GNK_Q2_10Q,Cash flow statement,observed,
+closing_total_cash,73587000,USD,2026-06-30,GNK_Q2_10Q,Cash flow statement,observed,
+newbuilding_commitment,0,USD,2026-10-12,GNK_VOLUNTEER,Delivery announcement,observed,Volunteer delivered; no remaining committed acquisition
+net_fixed_assets,1049650000,USD,2026-06-30,GNK_Q2_10Q,Balance sheet,observed,Vessels net
+book_equity,890257000,USD,2026-06-30,GNK_Q2_10Q,Balance sheet,observed,Total equity
+minimum_unrestricted_liquidity,30000000,USD,2026-06-30,GNK_Q2_10Q,Revolver covenant,estimated,Simplified model floor; facility covenant details require review
+equity_issued,0,shares,2026-10-12,GNK_Q2_10Q,Subsequent events,observed,No modeled equity issuance
+equity_proceeds,0,USD,2026-10-12,GNK_Q2_10Q,Subsequent events,observed,
+subsequent_dividend,34869284,USD,2026-08-24,GNK_Q2_RELEASE,$0.80 x June shares,estimated,Uses June 30 shares; record-date count not separately disclosed
+debt_payments,-50000000,USD,2026-07-15,GNK_Q2_RELEASE,Fleet renewal section,observed,Negative denotes a revolver draw in the generic bridge
+adjusted_debt_carrying,369508000,USD,2026-07-15,GNK_Q2_RELEASE,June carrying debt plus July draw,estimated,
+adjusted_shares,43586605,shares,2026-10-12,GNK_Q2_10Q,June shares carried forward,estimated,
+atm_jefferies,0,USD,2026-10-12,GNK_Q2_10Q,Not applicable,observed,
+atm_deutsche,0,USD,2026-10-12,GNK_Q2_10Q,Not applicable,observed,
+share_price,26.67,USD/share,2026-10-12,GNK_PRICE,Oct 12 historical close,observed,
+operating_working_capital,16848000,USD,2026-06-30,GNK_Q2_10Q,Balance sheet current accounts,estimated,Due from charterers + prepaids + inventories - payables/accruals - deferred revenue
+atm_capacity,0,USD,2026-10-12,GNK_Q2_10Q,No modeled ATM,observed,
