@@ -8,7 +8,6 @@ from pathlib import Path
 import nbformat as nbf
 from nbclient import NotebookClient
 
-
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -88,7 +87,9 @@ new filings, fleet transactions, debt balances and independent vessel marks beco
     ]
     path = ROOT / "notebooks" / f"{ticker}-research.ipynb"
     nbf.write(nb, path)
-    NotebookClient(nb, timeout=300, kernel_name="python3", resources={"metadata": {"path": str(ROOT)}}).execute()
+    NotebookClient(
+        nb, timeout=300, kernel_name="python3", resources={"metadata": {"path": str(ROOT)}}
+    ).execute()
     nbf.write(nb, path)
     print(f"Executed {path.relative_to(ROOT)}")
 

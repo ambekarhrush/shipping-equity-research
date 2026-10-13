@@ -21,3 +21,7 @@ jobs:
       - run: uv run shipping-equity reconcile SBLK --evidence outputs/sblk-2026-10-09/excel-calculation-evidence.json
       - run: uv run shipping-equity run SBLK
       - run: uv run python scripts/build_notebook.py
+      - run: uv run shipping-equity validate GNK
+      - run: uv run shipping-equity reconcile GNK --evidence outputs/gnk-2026-10-12/excel-calculation-evidence.json
+      - run: uv run shipping-equity run GNK
+      - run: uv run python scripts/build_company_notebook.py GNK
