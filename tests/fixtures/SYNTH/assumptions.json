@@ -1,0 +1,292 @@
+[
+  {
+    "key": "tce_Newcastlemax",
+    "label": "Newcastlemax open TCE",
+    "unit": "USD/day",
+    "bear": 100,
+    "base": 100,
+    "bull": 100,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "tce_Capesize",
+    "label": "Capesize open TCE",
+    "unit": "USD/day",
+    "bear": 100,
+    "base": 100,
+    "bull": 100,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "tce_Post Panamax",
+    "label": "Post Panamax open TCE",
+    "unit": "USD/day",
+    "bear": 100,
+    "base": 100,
+    "bull": 100,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "tce_Kamsarmax",
+    "label": "Kamsarmax open TCE",
+    "unit": "USD/day",
+    "bear": 100,
+    "base": 100,
+    "bull": 100,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "tce_Ultramax",
+    "label": "Ultramax open TCE",
+    "unit": "USD/day",
+    "bear": 100,
+    "base": 100,
+    "bull": 100,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "tce_Supramax",
+    "label": "Supramax open TCE",
+    "unit": "USD/day",
+    "bear": 100,
+    "base": 100,
+    "bull": 100,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "wacc",
+    "label": "Discount rate",
+    "unit": "fraction",
+    "bear": 0.1,
+    "base": 0.1,
+    "bull": 0.1,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "asset_factor",
+    "label": "Appraisal multiplier",
+    "unit": "multiple",
+    "bear": 1,
+    "base": 1,
+    "bull": 1,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "retirement_age",
+    "label": "Retirement age",
+    "unit": "years",
+    "bear": 25,
+    "base": 25,
+    "bull": 25,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "offhire",
+    "label": "Unavailable share of owned days",
+    "unit": "fraction",
+    "bear": 0.1,
+    "base": 0.1,
+    "bull": 0.1,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "opex",
+    "label": "Vessel operating cost",
+    "unit": "USD/day",
+    "bear": 20,
+    "base": 20,
+    "bull": 20,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "management",
+    "label": "Management cost",
+    "unit": "USD/day",
+    "bear": 5,
+    "base": 5,
+    "bull": 5,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "ga",
+    "label": "Corporate overhead",
+    "unit": "USD/year",
+    "bear": 3650,
+    "base": 3650,
+    "bull": 3650,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "dock_budget",
+    "label": "Drydock cash budget",
+    "unit": "USD/vessel/year",
+    "bear": 3650,
+    "base": 3650,
+    "bull": 3650,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "maintenance",
+    "label": "Other maintenance capex",
+    "unit": "USD/vessel/year",
+    "bear": 3650,
+    "base": 3650,
+    "bull": 3650,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "scrap_per_dwt",
+    "label": "Net scrap proxy",
+    "unit": "USD/dwt",
+    "bear": 10,
+    "base": 10,
+    "bull": 10,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "inflation",
+    "label": "Annual cost and rate growth",
+    "unit": "fraction",
+    "bear": 0,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "tax_on_revenue",
+    "label": "Cash taxes / TCE revenue",
+    "unit": "fraction",
+    "bear": 0,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "interest",
+    "label": "Debt interest rate",
+    "unit": "fraction",
+    "bear": 0.1,
+    "base": 0.1,
+    "bull": 0.1,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "bridge_cash",
+    "label": "Unreported net cash change",
+    "unit": "USD",
+    "bear": 0,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "remaining_capex_factor",
+    "label": "Remaining newbuild payment multiplier",
+    "unit": "multiple",
+    "bear": 1,
+    "base": 1,
+    "bull": 1,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "extra_claims",
+    "label": "Other net claims",
+    "unit": "USD",
+    "bear": 0,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "ga_floor",
+    "label": "Overhead retained until last retirement",
+    "unit": "fraction",
+    "bear": 1,
+    "base": 1,
+    "bull": 1,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "additional_shares",
+    "label": "Additional share dilution",
+    "unit": "shares",
+    "bear": 0,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "atm_draw",
+    "label": "Hypothetical additional ATM gross proceeds",
+    "unit": "USD",
+    "bear": 0,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "atm_fee",
+    "label": "ATM fee assumption",
+    "unit": "fraction",
+    "bear": 0,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "fixed_share",
+    "label": "Fixed-charter share",
+    "unit": "fraction",
+    "bear": 0,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "fixed_tce",
+    "label": "Fixed-charter TCE",
+    "unit": "USD/day",
+    "bear": 0,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  },
+  {
+    "key": "working_capital",
+    "label": "Operating working capital / annual TCE",
+    "unit": "fraction",
+    "bear": 0,
+    "base": 0,
+    "bull": 0,
+    "status": "assumption",
+    "rationale": "Invented standalone arithmetic fixture."
+  }
+]

@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "ticker": "SBLK",
+  "name": "Star Bulk Carriers",
+  "segment": "dry_bulk",
+  "currency": "USD",
+  "valuation_date": "2026-10-09",
+  "information_cutoff": "2026-10-09",
+  "statement_date": "2026-06-30",
+  "price_date": "2026-10-09",
+  "price": 29.7,
+  "quote_source": "SBLK_PRICE",
+  "forecast_end_year": 2056,
+  "default_case": "base",
+  "evidence_status": "Conditional valuation: cash bridge and remaining capex estimated",
+  "limitations": [
+    "Dated vessel appraisals; no October independent marks.",
+    "Unreported cash bridge and newbuild allocations are assumptions.",
+    "Open-fleet scenario; actual vessel charter books not reconstructed.",
+    "Annual debt buckets use assumed payment dates; not a covenant forecast.",
+    "Drydock cash is a normalized budget; no vessel survey calendar.",
+    "No fleet renewal after committed newbuilds. Charter-in net economics assumed zero.",
+    "DWT scrap proxy and zero base net other assets/claims require review."
+  ],
+  "class_order": [
+    "Newcastlemax",
+    "Capesize",
+    "Post Panamax",
+    "Kamsarmax",
+    "Ultramax",
+    "Supramax"
+  ],
+  "reported_operating_dwt": 13504552,
+  "history_label": "H1 2026",
+  "audit_notes": [
+    "Source discrepancy: appraisal introduction says 133 owned; Annex A lists 135 including two disposals.",
+    "Individual appraisal records are joined to the October prospectus, excluding Pendulum and Star Eva."
+  ]
+}

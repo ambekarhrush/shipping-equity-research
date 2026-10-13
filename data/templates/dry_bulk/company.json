@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "ticker": null,
+  "name": null,
+  "segment": "dry_bulk",
+  "currency": "USD",
+  "valuation_date": null,
+  "information_cutoff": null,
+  "statement_date": null,
+  "price_date": null,
+  "price": null,
+  "quote_source": null,
+  "forecast_end_year": null,
+  "default_case": "base",
+  "evidence_status": "Incomplete inputs. Do not use for valuation.",
+  "limitations": [],
+  "class_order": [
+    "Newcastlemax",
+    "Capesize",
+    "Post Panamax",
+    "Kamsarmax",
+    "Ultramax",
+    "Supramax"
+  ],
+  "reported_operating_dwt": null,
+  "history_label": null,
+  "audit_notes": []
+}

@@ -1,0 +1,871 @@
+{
+  "status": "pass",
+  "input_sha256": "98278536e987c1373aac529d7aa2cc20a45ce8d675b42e177f49c3780acdb328",
+  "engine": "Independent Python vs artifact-tool Excel formula calculation",
+  "cells_compared": 3657,
+  "max_absolute_difference": 1.9073486328125e-06,
+  "controls": [
+    {
+      "control": "bear / price",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / nav_per_share",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / price_nav",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / enterprise_value",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / equity_dcf",
+      "cells": 1,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / dcf_per_share",
+      "cells": 1,
+      "max_abs_difference": 1.3322676295501878e-15,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / next_year_revenue",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / next_year_ufcf",
+      "cells": 1,
+      "max_abs_difference": 5.960464477539063e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / next_year_equity_cash",
+      "cells": 1,
+      "max_abs_difference": 4.470348358154297e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / owned",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / available",
+      "cells": 39,
+      "max_abs_difference": 7.275957614183426e-12,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / revenue",
+      "cells": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / opex",
+      "cells": 39,
+      "max_abs_difference": 5.960464477539063e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / management",
+      "cells": 39,
+      "max_abs_difference": 3.725290298461914e-09,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / ga",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / dock",
+      "cells": 39,
+      "max_abs_difference": 1.4901161193847656e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / operating",
+      "cells": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / tax",
+      "cells": 39,
+      "max_abs_difference": 9.313225746154785e-10,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / maintenance",
+      "cells": 39,
+      "max_abs_difference": 3.725290298461914e-09,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / newbuild",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / scrap",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / wc",
+      "cells": 39,
+      "max_abs_difference": 2.2351741790771484e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / delta_wc",
+      "cells": 39,
+      "max_abs_difference": 2.2351741790771484e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / ufcf",
+      "cells": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / discount",
+      "cells": 39,
+      "max_abs_difference": 1.1102230246251565e-16,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / pv",
+      "cells": 39,
+      "max_abs_difference": 1.043081283569336e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / open_pv",
+      "cells": 39,
+      "max_abs_difference": 5.960464477539063e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / open_revenue",
+      "cells": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / open_wc",
+      "cells": 39,
+      "max_abs_difference": 2.2351741790771484e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / cash flow / delta_open_wc",
+      "cells": 39,
+      "max_abs_difference": 2.2351741790771484e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / financing / opening_debt",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / financing / repayment",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / financing / closing_debt",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / financing / interest",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / financing / ufcf",
+      "cells": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / financing / equity_cash",
+      "cells": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / financing / opening_cash",
+      "cells": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / financing / closing_cash",
+      "cells": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / financing / mincash",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / financing / headroom",
+      "cells": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bear / implied rates",
+      "cells": 1,
+      "max_abs_difference": 3.100193435301435e-10,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "control": "base / price",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / nav_per_share",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / price_nav",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / enterprise_value",
+      "cells": 1,
+      "max_abs_difference": 9.5367431640625e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / equity_dcf",
+      "cells": 1,
+      "max_abs_difference": 9.5367431640625e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / dcf_per_share",
+      "cells": 1,
+      "max_abs_difference": 1.0658141036401503e-14,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / next_year_revenue",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / next_year_ufcf",
+      "cells": 1,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / next_year_equity_cash",
+      "cells": 1,
+      "max_abs_difference": 5.960464477539063e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / owned",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / available",
+      "cells": 39,
+      "max_abs_difference": 7.275957614183426e-12,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / revenue",
+      "cells": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / opex",
+      "cells": 39,
+      "max_abs_difference": 2.9802322387695312e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / management",
+      "cells": 39,
+      "max_abs_difference": 3.725290298461914e-09,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / ga",
+      "cells": 39,
+      "max_abs_difference": 7.450580596923828e-09,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / dock",
+      "cells": 39,
+      "max_abs_difference": 1.4901161193847656e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / operating",
+      "cells": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / tax",
+      "cells": 39,
+      "max_abs_difference": 9.313225746154785e-10,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / maintenance",
+      "cells": 39,
+      "max_abs_difference": 1.862645149230957e-09,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / newbuild",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / scrap",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / wc",
+      "cells": 39,
+      "max_abs_difference": 1.4901161193847656e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / delta_wc",
+      "cells": 39,
+      "max_abs_difference": 1.4901161193847656e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / ufcf",
+      "cells": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / discount",
+      "cells": 39,
+      "max_abs_difference": 1.1102230246251565e-16,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / pv",
+      "cells": 39,
+      "max_abs_difference": 5.960464477539063e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / open_pv",
+      "cells": 39,
+      "max_abs_difference": 5.960464477539063e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / open_revenue",
+      "cells": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / open_wc",
+      "cells": 39,
+      "max_abs_difference": 1.4901161193847656e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / cash flow / delta_open_wc",
+      "cells": 39,
+      "max_abs_difference": 1.4901161193847656e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / financing / opening_debt",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / financing / repayment",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / financing / closing_debt",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / financing / interest",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / financing / ufcf",
+      "cells": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / financing / equity_cash",
+      "cells": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / financing / opening_cash",
+      "cells": 39,
+      "max_abs_difference": 5.960464477539063e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / financing / closing_cash",
+      "cells": 39,
+      "max_abs_difference": 5.960464477539063e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / financing / mincash",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / financing / headroom",
+      "cells": 39,
+      "max_abs_difference": 5.960464477539063e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "base / implied rates",
+      "cells": 1,
+      "max_abs_difference": 1.6277379444318285e-10,
+      "tolerance": 1e-08,
+      "pass": true
+    },
+    {
+      "control": "bull / price",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / nav_per_share",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / price_nav",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / enterprise_value",
+      "cells": 1,
+      "max_abs_difference": 1.9073486328125e-06,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / equity_dcf",
+      "cells": 1,
+      "max_abs_difference": 1.9073486328125e-06,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / dcf_per_share",
+      "cells": 1,
+      "max_abs_difference": 2.1316282072803006e-14,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / next_year_revenue",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / next_year_ufcf",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / next_year_equity_cash",
+      "cells": 1,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / owned",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / available",
+      "cells": 39,
+      "max_abs_difference": 7.275957614183426e-12,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / revenue",
+      "cells": 39,
+      "max_abs_difference": 2.384185791015625e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / opex",
+      "cells": 39,
+      "max_abs_difference": 2.9802322387695312e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / management",
+      "cells": 39,
+      "max_abs_difference": 3.725290298461914e-09,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / ga",
+      "cells": 39,
+      "max_abs_difference": 1.4901161193847656e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / dock",
+      "cells": 39,
+      "max_abs_difference": 1.4901161193847656e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / operating",
+      "cells": 39,
+      "max_abs_difference": 2.384185791015625e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / tax",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / maintenance",
+      "cells": 39,
+      "max_abs_difference": 1.862645149230957e-09,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / newbuild",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / scrap",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / wc",
+      "cells": 39,
+      "max_abs_difference": 1.4901161193847656e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / delta_wc",
+      "cells": 39,
+      "max_abs_difference": 2.2351741790771484e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / ufcf",
+      "cells": 39,
+      "max_abs_difference": 2.384185791015625e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / discount",
+      "cells": 39,
+      "max_abs_difference": 1.1102230246251565e-16,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / pv",
+      "cells": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / open_pv",
+      "cells": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / open_revenue",
+      "cells": 39,
+      "max_abs_difference": 2.384185791015625e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / open_wc",
+      "cells": 39,
+      "max_abs_difference": 1.4901161193847656e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / cash flow / delta_open_wc",
+      "cells": 39,
+      "max_abs_difference": 2.2351741790771484e-08,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / financing / opening_debt",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / financing / repayment",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / financing / closing_debt",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / financing / interest",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / financing / ufcf",
+      "cells": 39,
+      "max_abs_difference": 2.384185791015625e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / financing / equity_cash",
+      "cells": 39,
+      "max_abs_difference": 2.384185791015625e-07,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / financing / opening_cash",
+      "cells": 39,
+      "max_abs_difference": 1.9073486328125e-06,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / financing / closing_cash",
+      "cells": 39,
+      "max_abs_difference": 1.9073486328125e-06,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / financing / mincash",
+      "cells": 39,
+      "max_abs_difference": 0.0,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / financing / headroom",
+      "cells": 39,
+      "max_abs_difference": 1.9073486328125e-06,
+      "tolerance": 0.0001,
+      "pass": true
+    },
+    {
+      "control": "bull / implied rates",
+      "cells": 1,
+      "max_abs_difference": 9.37416810842251e-12,
+      "tolerance": 1e-08,
+      "pass": true
+    }
+  ],
+  "failures": []
+}

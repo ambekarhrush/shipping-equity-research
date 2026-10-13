@@ -1,0 +1,54 @@
+{
+  "ticker": "SBLK",
+  "valuation_date": "2026-10-09",
+  "input_sha256": "98278536e987c1373aac529d7aa2cc20a45ce8d675b42e177f49c3780acdb328",
+  "status": "Conditional valuation: cash bridge and remaining capex estimated",
+  "cases": {
+    "bear": {
+      "price": 29.7,
+      "nav_per_share": 24.588414798471764,
+      "price_nav": 1.2078859187720363,
+      "enterprise_value": 764667805.0593995,
+      "equity_dcf": 261737805.0593996,
+      "dcf_per_share": 2.235711167367572,
+      "next_year_revenue": 608536366.9394898,
+      "next_year_ufcf": 109497298.11891967,
+      "next_year_equity_cash": -96375007.15505292,
+      "minimum_cash_headroom": -150465094.41609615
+    },
+    "base": {
+      "price": 29.7,
+      "nav_per_share": 32.98783732969295,
+      "price_nav": 0.9003318314919205,
+      "enterprise_value": 3510070329.6411705,
+      "equity_dcf": 3082140329.6411705,
+      "dcf_per_share": 26.553834117576322,
+      "next_year_revenue": 893209524.6036334,
+      "next_year_ufcf": 442510049.399902,
+      "next_year_equity_cash": 249540605.18072394,
+      "minimum_cash_headroom": 448744566.5505239
+    },
+    "bull": {
+      "price": 29.7,
+      "nav_per_share": 39.106220373727595,
+      "price_nav": 0.759469969640766,
+      "enterprise_value": 7017210331.513417,
+      "equity_dcf": 6639280331.513417,
+      "dcf_per_share": 57.19997460453705,
+      "next_year_revenue": 1170657907.56368,
+      "next_year_ufcf": 750671683.7902453,
+      "next_year_equity_cash": 566304146.9409302,
+      "minimum_cash_headroom": 592594681.3436748
+    }
+  },
+  "reverse": {
+    "status": "solved",
+    "multiplier": 1.0554745519766584,
+    "residual": -9.231502673401337e-09,
+    "iterations": 33,
+    "bounds": [
+      0,
+      3
+    ]
+  }
+}

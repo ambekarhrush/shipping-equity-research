@@ -1,0 +1,2 @@
+vessel_id,name,source_imo,vessel_class,dwt,build_year,delivery_date,delivery_status,disposal_date,appraisal_usd,appraisal_date,remaining_capex_usd,scrubber,source_id,source_location,notes
+SYNTH-ONE,Synthetic One,,Kamsarmax,1000,2002,2027-01-15,assumed,,1800000,2026-12-31,1000000,0,SYNTH,,Invented late-life acquisition; no real vessel.

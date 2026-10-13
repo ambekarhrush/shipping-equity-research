@@ -1,0 +1,408 @@
+{
+  "status": "pass",
+  "case": "bear",
+  "engine": "Microsoft Excel for Mac: saved after live case-selector edit",
+  "input_sha256": "98278536e987c1373aac529d7aa2cc20a45ce8d675b42e177f49c3780acdb328",
+  "workbook_sha256": "01039193c9c15404b8ec58e05e5a23bc61ec3cfe2b9114b826f7ac1d8a69060e",
+  "values_compared": 1244,
+  "formula_errors": [],
+  "native_two_input_table": "25 recalculated cells matched full Python valuations",
+  "controls": [
+    {
+      "control": "price",
+      "values": 1,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "nav_per_share",
+      "values": 1,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "price_nav",
+      "values": 1,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "enterprise_value",
+      "values": 1,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "equity_dcf",
+      "values": 1,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "pass": true
+    },
+    {
+      "control": "dcf_per_share",
+      "values": 1,
+      "max_abs_difference": 1.3322676295501878e-15,
+      "pass": true
+    },
+    {
+      "control": "next_year_revenue",
+      "values": 1,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "next_year_ufcf",
+      "values": 1,
+      "max_abs_difference": 5.960464477539063e-08,
+      "pass": true
+    },
+    {
+      "control": "next_year_equity_cash",
+      "values": 1,
+      "max_abs_difference": 4.470348358154297e-08,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / owned",
+      "values": 39,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / available",
+      "values": 39,
+      "max_abs_difference": 7.275957614183426e-12,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / revenue",
+      "values": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / opex",
+      "values": 39,
+      "max_abs_difference": 5.960464477539063e-08,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / management",
+      "values": 39,
+      "max_abs_difference": 3.725290298461914e-09,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / ga",
+      "values": 39,
+      "max_abs_difference": 7.450580596923828e-09,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / dock",
+      "values": 39,
+      "max_abs_difference": 1.4901161193847656e-08,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / operating",
+      "values": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / tax",
+      "values": 39,
+      "max_abs_difference": 9.313225746154785e-10,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / maintenance",
+      "values": 39,
+      "max_abs_difference": 3.725290298461914e-09,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / newbuild",
+      "values": 39,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / scrap",
+      "values": 39,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / wc",
+      "values": 39,
+      "max_abs_difference": 2.2351741790771484e-08,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / delta_wc",
+      "values": 39,
+      "max_abs_difference": 2.2351741790771484e-08,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / ufcf",
+      "values": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / discount",
+      "values": 39,
+      "max_abs_difference": 1.1102230246251565e-16,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / pv",
+      "values": 39,
+      "max_abs_difference": 1.043081283569336e-07,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / open_pv",
+      "values": 39,
+      "max_abs_difference": 5.960464477539063e-08,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / open_revenue",
+      "values": 39,
+      "max_abs_difference": 1.1920928955078125e-07,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / open_wc",
+      "values": 39,
+      "max_abs_difference": 2.2351741790771484e-08,
+      "pass": true
+    },
+    {
+      "control": "Cash Flow / delta_open_wc",
+      "values": 39,
+      "max_abs_difference": 2.2351741790771484e-08,
+      "pass": true
+    },
+    {
+      "control": "Debt / opening_debt",
+      "values": 39,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "Debt / repayment",
+      "values": 39,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "Debt / closing_debt",
+      "values": 39,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "Debt / interest",
+      "values": 39,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "Debt / ufcf",
+      "values": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "pass": true
+    },
+    {
+      "control": "Debt / equity_cash",
+      "values": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "pass": true
+    },
+    {
+      "control": "Debt / opening_cash",
+      "values": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "pass": true
+    },
+    {
+      "control": "Debt / closing_cash",
+      "values": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "pass": true
+    },
+    {
+      "control": "Debt / mincash",
+      "values": 39,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "Debt / headroom",
+      "values": 39,
+      "max_abs_difference": 1.7881393432617188e-07,
+      "pass": true
+    },
+    {
+      "control": "Native data table 9,13",
+      "values": 1,
+      "max_abs_difference": 1.3322676295501878e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 9,14",
+      "values": 1,
+      "max_abs_difference": 9.992007221626409e-16,
+      "pass": true
+    },
+    {
+      "control": "Native data table 9,15",
+      "values": 1,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "Native data table 9,16",
+      "values": 1,
+      "max_abs_difference": 4.440892098500626e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 9,17",
+      "values": 1,
+      "max_abs_difference": 3.552713678800501e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 10,13",
+      "values": 1,
+      "max_abs_difference": 8.881784197001252e-16,
+      "pass": true
+    },
+    {
+      "control": "Native data table 10,14",
+      "values": 1,
+      "max_abs_difference": 9.992007221626409e-16,
+      "pass": true
+    },
+    {
+      "control": "Native data table 10,15",
+      "values": 1,
+      "max_abs_difference": 1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 10,16",
+      "values": 1,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "Native data table 10,17",
+      "values": 1,
+      "max_abs_difference": 1.7763568394002505e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 11,13",
+      "values": 1,
+      "max_abs_difference": 8.881784197001252e-16,
+      "pass": true
+    },
+    {
+      "control": "Native data table 11,14",
+      "values": 1,
+      "max_abs_difference": 9.992007221626409e-16,
+      "pass": true
+    },
+    {
+      "control": "Native data table 11,15",
+      "values": 1,
+      "max_abs_difference": 1.3322676295501878e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 11,16",
+      "values": 1,
+      "max_abs_difference": 4.440892098500626e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 11,17",
+      "values": 1,
+      "max_abs_difference": 0.0,
+      "pass": true
+    },
+    {
+      "control": "Native data table 12,13",
+      "values": 1,
+      "max_abs_difference": 2.6645352591003757e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 12,14",
+      "values": 1,
+      "max_abs_difference": 4.6629367034256575e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 12,15",
+      "values": 1,
+      "max_abs_difference": 6.217248937900877e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 12,16",
+      "values": 1,
+      "max_abs_difference": 1.1546319456101628e-14,
+      "pass": true
+    },
+    {
+      "control": "Native data table 12,17",
+      "values": 1,
+      "max_abs_difference": 1.687538997430238e-14,
+      "pass": true
+    },
+    {
+      "control": "Native data table 13,13",
+      "values": 1,
+      "max_abs_difference": 2.6645352591003757e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 13,14",
+      "values": 1,
+      "max_abs_difference": 3.9968028886505635e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 13,15",
+      "values": 1,
+      "max_abs_difference": 7.105427357601002e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 13,16",
+      "values": 1,
+      "max_abs_difference": 9.769962616701378e-15,
+      "pass": true
+    },
+    {
+      "control": "Native data table 13,17",
+      "values": 1,
+      "max_abs_difference": 1.4210854715202004e-14,
+      "pass": true
+    },
+    {
+      "control": "Reverse valuation",
+      "values": 1,
+      "max_abs_difference": 3.100193435301435e-10,
+      "pass": true
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+[
+  {
+    "key": "tce_Newcastlemax",
+    "label": "Newcastlemax open TCE",
+    "unit": "USD/day",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "tce_Capesize",
+    "label": "Capesize open TCE",
+    "unit": "USD/day",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "tce_Post Panamax",
+    "label": "Post Panamax open TCE",
+    "unit": "USD/day",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "tce_Kamsarmax",
+    "label": "Kamsarmax open TCE",
+    "unit": "USD/day",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "tce_Ultramax",
+    "label": "Ultramax open TCE",
+    "unit": "USD/day",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "tce_Supramax",
+    "label": "Supramax open TCE",
+    "unit": "USD/day",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "wacc",
+    "label": "Discount rate",
+    "unit": "fraction",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "asset_factor",
+    "label": "Appraisal multiplier",
+    "unit": "multiple",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "retirement_age",
+    "label": "Retirement age",
+    "unit": "years",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "offhire",
+    "label": "Unavailable share of owned days",
+    "unit": "fraction",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "opex",
+    "label": "Vessel operating cost",
+    "unit": "USD/day",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "management",
+    "label": "Management cost",
+    "unit": "USD/day",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "ga",
+    "label": "Corporate overhead",
+    "unit": "USD/year",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "dock_budget",
+    "label": "Drydock cash budget",
+    "unit": "USD/vessel/year",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "maintenance",
+    "label": "Other maintenance capex",
+    "unit": "USD/vessel/year",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "scrap_per_dwt",
+    "label": "Net scrap proxy",
+    "unit": "USD/dwt",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "inflation",
+    "label": "Annual cost and rate growth",
+    "unit": "fraction",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "tax_on_revenue",
+    "label": "Cash taxes / TCE revenue",
+    "unit": "fraction",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "interest",
+    "label": "Debt interest rate",
+    "unit": "fraction",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "bridge_cash",
+    "label": "Unreported net cash change",
+    "unit": "USD",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "remaining_capex_factor",
+    "label": "Remaining newbuild payment multiplier",
+    "unit": "multiple",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "extra_claims",
+    "label": "Other net claims",
+    "unit": "USD",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "ga_floor",
+    "label": "Overhead retained until last retirement",
+    "unit": "fraction",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "additional_shares",
+    "label": "Additional share dilution",
+    "unit": "shares",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "atm_draw",
+    "label": "Hypothetical additional ATM gross proceeds",
+    "unit": "USD",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "atm_fee",
+    "label": "ATM fee assumption",
+    "unit": "fraction",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "fixed_share",
+    "label": "Fixed-charter share",
+    "unit": "fraction",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "fixed_tce",
+    "label": "Fixed-charter TCE",
+    "unit": "USD/day",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  },
+  {
+    "key": "working_capital",
+    "label": "Operating working capital / annual TCE",
+    "unit": "fraction",
+    "bear": null,
+    "base": null,
+    "bull": null,
+    "status": "assumption",
+    "rationale": "Document the economic basis and evidence here."
+  }
+]

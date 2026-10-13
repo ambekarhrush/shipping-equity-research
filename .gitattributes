@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# Preserve CSV bytes used by input fingerprints; the CSV writer uses CRLF.
+*.csv -text whitespace=cr-at-eol
+*.xlsx binary
+*.png binary
