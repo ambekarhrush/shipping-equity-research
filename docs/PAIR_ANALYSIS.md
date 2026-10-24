@@ -1,4 +1,4 @@
-# Pair analysis: long SBLK, short GNK
+# Star Bulk vs Genco: like-for-like test
 
 **Prices at the 23 October 2026 close. Model inputs are unchanged from the dated SBLK (9 October)
 and GNK (12 October) packages; only the share price is refreshed.**
