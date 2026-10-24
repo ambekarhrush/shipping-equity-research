@@ -17,6 +17,7 @@ DCF** against **$29.70**. These are conditional estimates, not price targets or 
 [Open the GNK model](outputs/gnk-2026-10-12/GNK-valuation.xlsx) ·
 [Read the GNK notebook](notebooks/GNK-research.ipynb) ·
 [Peer comparison](docs/PEER_COMPARISON.md) ·
+[Pair analysis](docs/PAIR_ANALYSIS.md) ·
 [Research note](docs/RESEARCH_NOTE.md) ·
 [Five-minute guide](docs/QUICK_START.md)
 
@@ -37,6 +38,15 @@ a separate **44-vessel** package. Each workbook agrees with Python on **3,657 co
 values** across all scenarios. GNK's maximum absolute difference is below **$0.000001**.
 [Calculation evidence](outputs/sblk-2026-10-09/reconciliation.json) and
 [verification details](docs/VERIFICATION.md) define the checks and their limits.
+
+## Pair analysis: long SBLK, short GNK
+
+At the 23 October 2026 close, Genco looks dearer than Star Bulk on the flat base vector
+(13.8% vs 4.3% open-rate uplift needed). Most of that gap is fleet mix: Genco is 71%
+Capesize/Newcastlemax by deadweight against 45%. Reshaped to the Cal-27 FFA curve, the prices
+imply 0.94x and 0.93x of it. A Cal-27 FFA overlay neutralises the mix. About 7% of residual
+value gap remains, and NAV parity and a common curve multiple agree on that size.
+[Pair analysis](docs/PAIR_ANALYSIS.md) has the tables, the overlay sizing and the limits.
 
 ## Run it locally
 
@@ -103,7 +113,8 @@ runtime; it is a separate dependency from the portable Python workflow.
 ## Research boundaries
 
 This is a public-input snapshot with manually reviewed data, not an automated market-data
-feed. Freight rates are explicit scenarios. There is no licensed FFA curve, reconstructed
+feed. Freight rates are explicit scenarios; the pair analysis uses secondary-source Cal-27 FFA
+levels, not a licensed curve. There is no reconstructed
 charter book, full survey calendar, fleet-renewal financing model or historical forecast
 validation. The peer comparison is not yet normalized to a common reporting date. A passing arithmetic check does not validate an
 investment thesis. See [release status](docs/BUILD_STATUS.md) for completed and deferred work.
